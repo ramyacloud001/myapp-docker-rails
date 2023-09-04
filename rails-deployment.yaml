@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rails-app-deployment
-  namespace: rails-app-namespace
+  namespace: myapp-namespace
 spec:
   replicas: 2
   selector:
