@@ -1,0 +1,14 @@
+# rails-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: rails-app-service
+  namespace: rails-app-namespace
+spec:
+  selector:
+    app: rails-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer # Use LoadBalancer if you want to expose externally
