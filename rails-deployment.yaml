@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: rails-app-container
-          image: your/rails-app-image:tag
+          image: ramyacloud001/rails-image:latest
           ports:
             - containerPort: 3000
           env:
