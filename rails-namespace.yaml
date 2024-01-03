@@ -1,5 +1,5 @@
 # rails-namespace.yaml
-apiVersion: v2
+apiVersion: v1
 kind: Namespace
 metadata:
   name: myapp-namespace
