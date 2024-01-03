@@ -26,19 +26,6 @@ services:
       - DATABASE_HOST=db
       - DATABASE_USERNAME=postgres
       - DATABASE_PASSWORD=password
-  # elk:
-  #   image: sebp/elk
-  #   ports:
-  #     - "5601:5601"
-  #     - "9200:9200"
-  #     - "5044:5044"
-  #   volumes:
-  #     - ./logstash:/etc/logstash
-  #     - ./logstash/pipeline:/usr/share/logstash/pipeline
-  #   environment:
-  #     LS_HEAP_SIZE: "1g"
-  #   depends_on:
-  #     - web
 
   prometheus:
     image: prom/prometheus
