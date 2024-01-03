@@ -1,5 +1,5 @@
 # postgres-statefulset.yaml
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: postgres-statefulset
