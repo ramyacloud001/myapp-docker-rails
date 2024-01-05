@@ -1,0 +1,8 @@
+# argocd-rbac-cm.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-rbac-cm
+data:
+  policy.csv: |
+    g, your-argocd-repo:repos, role:readonly
