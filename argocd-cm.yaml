@@ -1,0 +1,9 @@
+# argocd-cm.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+data:
+  repositories: |
+    - url: https://github.com/ramyacloud001/myapp-docker-rails.git
+      type: git
